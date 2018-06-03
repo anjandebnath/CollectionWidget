@@ -67,6 +67,9 @@ public class MainActivity extends AppCompatActivity {
                         STUDENTS_URI, values);
                 Toast.makeText(getBaseContext(),
                         "Example: " + uri.toString() + " inserted!", Toast.LENGTH_LONG).show();
+
+                // this will send the broadcast to update the appwidget
+                CollectionWidget.sendRefreshBroadcast(MainActivity.this);
             }
         });
 
