@@ -28,6 +28,9 @@
         </receiver>
 
         <activity android:name=".DataActivity"></activity>
+
+        <service android:name=".MyWidgetRemoteViewsService"
+            android:permission="android.permission.BIND_REMOTEVIEWS"></service>
     </application>
 
 </manifest>
