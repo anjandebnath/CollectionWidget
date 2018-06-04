@@ -22,12 +22,8 @@ public class CollectionWidget extends AppWidgetProvider {
     @Override
     public void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds) {
      for (int appWidgetId : appWidgetIds) {
-            RemoteViews views = new RemoteViews(
-
-                    context.getPackageName(),
-                    R.layout.collection_widget
-
-            );
+           // Construct the RemoteViews object
+            RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.collection_widget);
 
             // click event handler for the title, launches the app when the user clicks on title
             Intent titleIntent = new Intent(context, MainActivity.class);
