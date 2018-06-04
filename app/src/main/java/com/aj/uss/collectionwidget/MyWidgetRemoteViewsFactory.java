@@ -54,7 +54,7 @@ public class MyWidgetRemoteViewsFactory implements RemoteViewsService.RemoteView
 
         Uri students = Uri.parse(URL);
 
-        Cursor mCursor = mContext.getContentResolver().query(students,
+        mCursor = mContext.getContentResolver().query(students,
                 null,
                 null,
                 null,
